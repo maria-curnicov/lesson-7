@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="transparent-wrapper">
+      <header class="header">
+        <h1>Регистрация</h1>
+
+        <nav>
+          <ul class="menu">
+            <li class="menu-item menu-item-registration"><a href="../index.html">Главная</a></li>
+            <li class="menu-item menu-item-registration"><a href="articles.html">Статьи</a></li>
+            <li class="menu-item menu-item-registration"><a href="catalog.html">Каталог</a></li>
+            <li class="menu-item menu-item-registration"><a href="contacts.html">Контакты</a></li>
+            <li class="menu-item menu-item-registration"><a href="gallery.html">Галерея</a></li>
+            <li class="menu-item menu-item-registration"><a href="page-nav.html">Навигация</a></li>
+            <li class="menu-item menu-item-registration active"><a href="registration.html">Регистрация</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="registration-page">
+        <form class="registration-form" action="https://tests.fomenko.top/echo/index.php" method="get">
+          <fieldset class="form-fieldset">
+            <legend class="form-fieldset-legend">Информация о пользователе</legend>
+
+            <div class="form-group">
+              <label class="form-input-label" for="firstname">Имя</label>
+              <input class="form-input form-input-name" name="firstname" id="firstname" type="text"
+                placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+              <label class="form-input-label" for="lastname">Фамилия</label>
+              <input class="form-input form-input-name" name="lastname" id="lastname" type="text"
+                placeholder="Введите фамилию">
+            </div>
+
+            <div class="form-group">
+              <label class="form-input-label" for="file">Добавьте фотографию</label>
+              <input class="form-input form-input-file" name="file" id="file" type="file" multiple>
+            </div>
+
+            <div class="form-group">
+              <label class="form-input-label" for="email">Email</label>
+              <input class="form-input" name="email" id="email" type="email" placeholder="Введите email">
+            </div>
+
+            <div class="form-group">
+              <label class="form-input-label" for="password">Пароль</label>
+              <input class="form-input" name="password" id="password" type="password" placeholder="Введите пароль">
+            </div>
+
+            <div class="form-group">
+              <label class="form-input-label" for="site">Адрес сайта</label>
+              <input class="form-input" name="site" id="site" type="url" placeholder="Введите адрес"
+                value="https://mysite.name">
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-fieldset-legend">Выберите свой пол</legend>
+            <label class="form-input-label form-input-dot">
+              Мужской
+              <input name="gender" type="radio" value="male">
+            </label>
+
+            <label class="form-input-label form-input-dot">
+              Женский
+              <input name="gender" type="radio" value="female">
+            </label>
+
+            <label class="form-input-label form-input-dot">
+              Другой
+              <input name="gender" type="radio" value="unknown">
+            </label>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-fieldset-legend">Выберите дату рождения</legend>
+
+            <div class="form-group">
+              <label class="form-input-label">
+                Дата рождения
+                <input name="birthday" type="date">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-fieldset-legend">Предпочитаемые кухни </legend>
+            <label class="form-input-label form-input-dot">
+              Французская
+              <input name="kit-fr" type="checkbox" value="fr">
+            </label>
+
+            <label class="form-input-label form-input-dot">
+              Итальянская
+              <input name="kit-it" type="checkbox" value="it">
+            </label>
+
+            <label class="form-input-label form-input-dot">
+              Молдавская
+              <input name="kit-md" type="checkbox" value="md">
+            </label>
+
+            <label class="form-input-label form-input-dot">
+              Испанская
+              <input name="kit-es" type="checkbox" value="es">
+            </label>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-fieldset-legend">Дополнительная информация</legend>
+
+            <div class="form-group">
+              <label class="form-input-label">
+                Информация о вас
+                <textarea class="textarea form-input" name="txt" id="txt" placeholder="Введите текст"></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group-button">
+            <button class="form-button" type="submit">Зарегистрироваться</button>
+            <button class="form-button" type="reset">Очистить форму</button>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <p>&copy; Мария Курников</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
